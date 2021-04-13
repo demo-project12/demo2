@@ -3,15 +3,15 @@ package com.example.demo.util;
 
 public class ServerStatus {
 
-    // ¿¡·¯ ÄÚµå
+    // ì—ëŸ¬ ì½”ë“œ
     public static final int ERROR_CODE = 500;
 
-    // ¼º°ø ÄÚµå
+    // ì„±ê³µ ì½”ë“œ
     public static final int SUCCESS_CODE = 200;
 
-    // ¿¡·¯ ¸Ş½ÃÁö
-    public static final String ERROR_MESSAGE = "¿À·ù°¡ ¹ß»ıÇÏ¿© ¿äÃ»¿¡ ½ÇÆĞ ÇÏ¿´½À´Ï´Ù.";
+    // ì—ëŸ¬ ë©”ì‹œì§€
+    public static final String ERROR_MESSAGE = "ì˜¤ë¥˜ê°€ ë°œìƒí•˜ì—¬ ìš”ì²­ì— ì‹¤íŒ¨ í•˜ì˜€ìŠµë‹ˆë‹¤.";
 
-    // ¼º°ø ¸Ş½ÃÁö
-    public static final String SUCCESS_MESSAGE = "Á¤»óÀûÀ¸·Î ¿äÃ»À» Ã³¸® ÇÏ¿´½À´Ï´Ù.";
+    // ì„±ê³µ ë©”ì‹œì§€
+    public static final String SUCCESS_MESSAGE = "ì •ìƒì ìœ¼ë¡œ ìš”ì²­ì„ ì²˜ë¦¬ í•˜ì˜€ìŠµë‹ˆë‹¤.";
 }

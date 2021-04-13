@@ -2,6 +2,16 @@ spring:
   profiles:
     active: prod
 #    active: dev
+    # include oauth property file
+    include: oauth
+
+server:
+  port: 8081
+
+# jasypt config (2021-04-13 12:13:39)
+jasypt:
+  encryptor:
+    bean: jasyptStringEncryptor
 
 --- #dev
 spring:
@@ -26,7 +36,7 @@ spring:
     url: jdbc:mariadb://rds-maria.c8dkd6mpemsb.ap-northeast-2.rds.amazonaws.com:3306/project
     driver-class-name: org.mariadb.jdbc.Driver
     username: admin
-    password: Password12!
+    password: ENC(S3sT9e6IKbjByJo7Z+wfFDkhL2AZFMun)
 
 
   jpa:
@@ -44,6 +54,3 @@ spring:
     hibernate:
       ddl-auto: create
 
-
-server:
-  port: 8081
