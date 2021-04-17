@@ -13,6 +13,7 @@ jasypt:
   encryptor:
     bean: jasyptStringEncryptor
 
+
 --- #dev
 spring:
   config:
@@ -24,6 +25,9 @@ spring:
     driverClassName: org.h2.Driver
     username: sa
     password:
+
+# front uri
+front-uri: http://localhost:3000
 
 --- #prod
 spring:
@@ -54,3 +58,5 @@ spring:
     hibernate:
       ddl-auto: create
 
+# front uri
+front-uri: http://localhost:3000

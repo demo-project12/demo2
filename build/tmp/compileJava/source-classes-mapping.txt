@@ -14,9 +14,8 @@ com/example/demo/user/model/CommonUserResult.java
  com.example.demo.user.model.CommonUserResult
 com/example/demo/config/JasyptConfig.java
  com.example.demo.config.JasyptConfig
-com/example/demo/user/domain/OAuthAttributes.java
- com.example.demo.user.domain.OAuthAttributes
- com.example.demo.user.domain.OAuthAttributes$OAuthAttributesBuilder
+com/example/demo/user/service/UserService.java
+ com.example.demo.user.service.UserService
 com/example/demo/DemoApplication.java
  com.example.demo.DemoApplication
 com/example/demo/config/WebConfig.java
@@ -25,22 +24,23 @@ com/example/demo/user/UserExceptionAdvice.java
  com.example.demo.user.UserExceptionAdvice
 com/example/demo/util/ServerStatus.java
  com.example.demo.util.ServerStatus
+com/example/demo/user/domain/SessionUser.java
+ com.example.demo.user.domain.SessionUser
 com/example/demo/user/domain/Role.java
  com.example.demo.user.domain.Role
-com/example/demo/user/controller/LoginController.java
- com.example.demo.user.controller.LoginController
 com/example/demo/user/domain/User.java
  com.example.demo.user.domain.User
  com.example.demo.user.domain.User$UserBuilder
-com/example/demo/user/service/UserService.java
- com.example.demo.user.service.UserService
-com/example/demo/user/domain/SessionUser.java
- com.example.demo.user.domain.SessionUser
 com/example/demo/user/service/CustomOAuth2UserService.java
  com.example.demo.user.service.CustomOAuth2UserService
 com/example/demo/user/controller/UserController.java
  com.example.demo.user.controller.UserController
+com/example/demo/user/domain/OAuthAttributes.java
+ com.example.demo.user.domain.OAuthAttributes
+ com.example.demo.user.domain.OAuthAttributes$OAuthAttributesBuilder
 com/example/demo/config/SecurityConfig.java
  com.example.demo.config.SecurityConfig
 com/example/demo/user/controller/UserAPIController.java
  com.example.demo.user.controller.UserAPIController
+com/example/demo/user/controller/LoginController.java
+ com.example.demo.user.controller.LoginController

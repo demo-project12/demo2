@@ -24,8 +24,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .authorizeRequests()
                 .antMatchers("/", "/css/**", "/images/**", "/js/**", "/h2-console/**", "/profile").permitAll()
-                // USER ROLE을 가진 사람에게만 권한을 줌
-                .antMatchers("/api/v1/**").hasRole(Role.USER.name())
+                .antMatchers("/api/v1/**").hasAnyRole(Role.GUEST.name(), Role.USER.name())
                 .anyRequest().authenticated()
                 .and()
                 .cors()
