@@ -35,6 +35,9 @@ dependencies {
     implementation group: 'com.github.ulisesbocchio', name: 'jasypt-spring-boot-starter', version: '3.0.3'
     //소셜로그인 등 클라이언트에서 필요한 의존성 추가. (2021-04-13 12:30:02)
     compile('org.springframework.boot:spring-boot-starter-oauth2-client')
+    compile group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
+
+    compile "org.springframework.boot:spring-boot-configuration-processor"
 
 }
 

@@ -7,3 +7,9 @@ spring:
             client-id: ENC(Y56IDQ4wg9PVeDxXAitIchi/4GLZ/ExafxQY7vJJ8vShFGXp2L37K1cBlGD6V4pn1fTjbGwKKxPIJfGbB0aXiU/3aC31f18Pz6T/H622M6NVNmjRzPZI8w==)
             client-secret: ENC(vrW7eIEmPKxOwjssuCFw9U5Sbnayzv3eTtpW2EJGDD84sCdWFsj+gQ==)
             scope: profile, email
+
+jwt:
+  token-secret: secretkey123
+  # 60 * 60 * 24
+  token-expiration-sec: 86400
+  aithorized-redirect-uris[0]: http://localhost:3000/oauth2/redirect
