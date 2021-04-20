@@ -4,17 +4,16 @@ import com.example.demo.annotation.LoginUser;
 import com.example.demo.domain.SessionUser;
 import com.example.demo.domain.User;
 import com.example.demo.model.CommonUserResult;
+import com.example.demo.security.UserPrincipal;
 import com.example.demo.service.ResponseService;
 import com.example.demo.service.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import net.minidev.json.JSONObject;
-import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 @Slf4j
 @RestController
-@RequestMapping("/")
 @RequiredArgsConstructor
 public class UserController {
 
@@ -30,7 +29,13 @@ public class UserController {
     }
 
     @GetMapping("/user")
-    public ResponseEntity<?> test(@LoginUser SessionUser user) {
-        return ResponseEntity.ok(new JSONObject().appendField("result", true));
+    public User test(@LoginUser SessionUser user) {
+        return userService.getLoginUser(user);
+    }
+
+    @GetMapping("/user/me")
+    @PreAuthorize("hasRole('USER')")
+    public User getCurrentUser(@LoginUser UserPrincipal userPrincipal) {
+        return userService.getCurrentUser(userPrincipal);
     }
 }

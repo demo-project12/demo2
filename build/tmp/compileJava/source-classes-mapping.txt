@@ -1,52 +1,86 @@
-com/example/demo/annotation/LoginUserHandlerMethodArgumentResolver.java
- com.example.demo.annotation.LoginUserHandlerMethodArgumentResolver
-com/example/demo/user/domain/User.java
- com.example.demo.user.domain.User
- com.example.demo.user.domain.User$UserBuilder
-com/example/demo/user/domain/AuthProvider.java
- com.example.demo.user.domain.AuthProvider
-com/example/demo/user/controller/UserController.java
- com.example.demo.user.controller.UserController
+com/example/demo/domain/SessionUser.java
+ com.example.demo.domain.SessionUser
+com/example/demo/domain/User.java
+ com.example.demo.domain.User
+ com.example.demo.domain.User$UserBuilder
+com/example/demo/security/oauth2/user/GoogleOAuth2UserInfo.java
+ com.example.demo.security.oauth2.user.GoogleOAuth2UserInfo
+com/example/demo/exception/UserException.java
+ com.example.demo.exception.UserException
+com/example/demo/exception/BadRequestException.java
+ com.example.demo.exception.BadRequestException
+com/example/demo/security/TokenAuthenticationFilter.java
+ com.example.demo.security.TokenAuthenticationFilter
 com/example/demo/config/WebMvcConfig.java
  com.example.demo.config.WebMvcConfig
-com/example/demo/user/UserException.java
- com.example.demo.user.UserException
-com/example/demo/user/service/ResponseService.java
- com.example.demo.user.service.ResponseService
-com/example/demo/user/model/CommonUserResult.java
- com.example.demo.user.model.CommonUserResult
-com/example/demo/user/domain/OAuthAttributes.java
- com.example.demo.user.domain.OAuthAttributes
- com.example.demo.user.domain.OAuthAttributes$OAuthAttributesBuilder
+com/example/demo/security/CustomUserDetailsService.java
+ com.example.demo.security.CustomUserDetailsService
 com/example/demo/config/SecurityConfig.java
  com.example.demo.config.SecurityConfig
-com/example/demo/user/controller/UserAPIController.java
- com.example.demo.user.controller.UserAPIController
-com/example/demo/user/service/UserService.java
- com.example.demo.user.service.UserService
 com/example/demo/config/WebConfig.java
  com.example.demo.config.WebConfig
-com/example/demo/user/model/JWTProperties.java
- com.example.demo.user.model.JWTProperties
- com.example.demo.user.model.JWTProperties$Auth
- com.example.demo.user.model.JWTProperties$OAuth2
-com/example/demo/user/domain/SessionUser.java
- com.example.demo.user.domain.SessionUser
+com/example/demo/exception/OAuth2AuthenticationProcessingException.java
+ com.example.demo.exception.OAuth2AuthenticationProcessingException
+com/example/demo/domain/Role.java
+ com.example.demo.domain.Role
+com/example/demo/service/UserService.java
+ com.example.demo.service.UserService
+com/example/demo/exception/UserExceptionAdvice.java
+ com.example.demo.exception.UserExceptionAdvice
 com/example/demo/util/ServerStatus.java
  com.example.demo.util.ServerStatus
-com/example/demo/user/domain/Role.java
- com.example.demo.user.domain.Role
-com/example/demo/user/service/CustomOAuth2UserService.java
- com.example.demo.user.service.CustomOAuth2UserService
+com/example/demo/repository/UserRepository.java
+ com.example.demo.repository.UserRepository
 com/example/demo/config/JasyptConfig.java
  com.example.demo.config.JasyptConfig
-com/example/demo/DemoApplication.java
- com.example.demo.DemoApplication
+com/example/demo/security/TokenProvider.java
+ com.example.demo.security.TokenProvider
+com/example/demo/model/CommonUserResult.java
+ com.example.demo.model.CommonUserResult
 com/example/demo/annotation/LoginUser.java
  com.example.demo.annotation.LoginUser
-com/example/demo/user/controller/LoginController.java
- com.example.demo.user.controller.LoginController
-com/example/demo/user/repository/UserRepository.java
- com.example.demo.user.repository.UserRepository
-com/example/demo/user/UserExceptionAdvice.java
- com.example.demo.user.UserExceptionAdvice
+com/example/demo/security/oauth2/CustomOAuth2UserService.java
+ com.example.demo.security.oauth2.CustomOAuth2UserService
+com/example/demo/controller/UserAPIController.java
+ com.example.demo.controller.UserAPIController
+com/example/demo/security/oauth2/user/OAuth2UserInfoFactory.java
+ com.example.demo.security.oauth2.user.OAuth2UserInfoFactory
+com/example/demo/security/oauth2/user/OAuth2UserInfo.java
+ com.example.demo.security.oauth2.user.OAuth2UserInfo
+com/example/demo/security/oauth2/RestAuthenticationEntryPoint.java
+ com.example.demo.security.oauth2.RestAuthenticationEntryPoint
+com/example/demo/domain/OAuthAttributes.java
+ com.example.demo.domain.OAuthAttributes
+ com.example.demo.domain.OAuthAttributes$OAuthAttributesBuilder
+com/example/demo/security/UserPrincipal.java
+ com.example.demo.security.UserPrincipal
+com/example/demo/controller/LoginController.java
+ com.example.demo.controller.LoginController
+com/example/demo/service/ResponseService.java
+ com.example.demo.service.ResponseService
+com/example/demo/controller/AuthController.java
+ com.example.demo.controller.AuthController
+com/example/demo/controller/UserController.java
+ com.example.demo.controller.UserController
+com/example/demo/model/JWTProperties.java
+ com.example.demo.model.JWTProperties
+ com.example.demo.model.JWTProperties$Auth
+ com.example.demo.model.JWTProperties$OAuth2
+com/example/demo/security/oauth2/OAuth2AuthenticationSuccessHandler.java
+ com.example.demo.security.oauth2.OAuth2AuthenticationSuccessHandler
+com/example/demo/domain/AuthProvider.java
+ com.example.demo.domain.AuthProvider
+com/example/demo/model/SignUpRequest.java
+ com.example.demo.model.SignUpRequest
+com/example/demo/security/oauth2/OAuth2AuthenticationFailureHandler.java
+ com.example.demo.security.oauth2.OAuth2AuthenticationFailureHandler
+com/example/demo/DemoApplication.java
+ com.example.demo.DemoApplication
+com/example/demo/exception/ResourceNotFoundException.java
+ com.example.demo.exception.ResourceNotFoundException
+com/example/demo/security/oauth2/HttpCookieOAuth2AuthorizationRequestRepository.java
+ com.example.demo.security.oauth2.HttpCookieOAuth2AuthorizationRequestRepository
+com/example/demo/security/oauth2/user/FacebookOAuth2UserInfo.java
+ com.example.demo.security.oauth2.user.FacebookOAuth2UserInfo
+com/example/demo/util/CookieUtils.java
+ com.example.demo.util.CookieUtils

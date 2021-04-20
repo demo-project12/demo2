@@ -2,6 +2,7 @@ package com.example.demo.domain;
 
 import com.sun.istack.NotNull;
 import lombok.*;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import javax.persistence.*;
 
@@ -15,9 +16,6 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idx;
-
-    @Column(length = 20)
-    private String id;
 
     @Column(length = 60)
     private String password;
@@ -59,5 +57,9 @@ public class User {
 
     public String getRoleKey() {
         return this.role.getKey() ;
+    }
+
+    public Boolean matchesPassword(String inputPassword) {
+        return new BCryptPasswordEncoder().matches(inputPassword, password);
     }
 }

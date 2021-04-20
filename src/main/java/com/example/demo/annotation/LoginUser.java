@@ -1,5 +1,7 @@
 package com.example.demo.annotation;
 
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+
 import java.lang.annotation.*;
 
 /**
@@ -8,8 +10,9 @@ import java.lang.annotation.*;
  * @since (2021-04-13 13:18:59)
  */
 
-@Target(ElementType.PARAMETER)
+@Target({ElementType.PARAMETER, ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
+@AuthenticationPrincipal
 public @interface LoginUser {
 }
