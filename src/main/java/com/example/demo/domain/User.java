@@ -28,11 +28,11 @@ public class User {
     @Column(length = 50)
     private String email;
 
-    /*@NotNull
+    @NotNull
     @Enumerated(EnumType.STRING)
     private AuthProvider provider;
 
-    private String providerId;*/
+    private String providerId;
 
     private String picture;
 
